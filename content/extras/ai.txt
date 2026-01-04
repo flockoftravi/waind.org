@@ -1,0 +1,6 @@
+# ai.txt - Preferences for AI training and scraping
+# See: https://site.spawning.ai/spawning-ai-txt
+
+User-Agent: *
+Disallow-AI-Training: Yes
+Disallow-AI-Scraping: Yes

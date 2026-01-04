@@ -33,7 +33,13 @@ PAGE_SAVE_AS = "{slug}/index.html"
 PATH_METADATA = r"pages/(?P<slug>.*)\.md"
 
 # Static paths
-STATIC_PATHS = ["images"]
+STATIC_PATHS = ["images", "extras"]
+
+# Place these files at the site root
+EXTRA_PATH_METADATA = {
+    "extras/robots.txt": {"path": "robots.txt"},
+    "extras/ai.txt": {"path": "ai.txt"},
+}
 
 # Disable unused features
 ARCHIVES_SAVE_AS = ""
