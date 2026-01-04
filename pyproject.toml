@@ -1,0 +1,14 @@
+[project]
+name = "waind-dot-org"
+version = "0.1.0"
+description = "Personal site"
+requires-python = ">=3.10"
+dependencies = [
+    "pelican>=4.9",
+    "markdown>=3.5",
+]
+
+[dependency-groups]
+dev = [
+    "invoke>=2.2",
+]

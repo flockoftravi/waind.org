@@ -1,0 +1,145 @@
+:root {
+    --text: #222;
+    --bg: #fff;
+    --muted: #666;
+    --link: #0066cc;
+    --border: #ddd;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #e0e0e0;
+        --bg: #1a1a1a;
+        --muted: #999;
+        --link: #6db3f2;
+        --border: #333;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--muted);
+}
+
+nav a:hover {
+    color: var(--text);
+}
+
+nav .site-title {
+    color: var(--text);
+    font-weight: 600;
+}
+
+main {
+    min-height: 60vh;
+}
+
+h1, h2, h3 {
+    line-height: 1.3;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.4rem; }
+h3 { font-size: 1.15rem; }
+
+a {
+    color: var(--link);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 0.75rem;
+}
+
+.post-date {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+article header {
+    margin-bottom: 2rem;
+}
+
+article header h1 {
+    margin-bottom: 0.5rem;
+}
+
+article header time {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.content p,
+.content ul,
+.content ol {
+    margin-bottom: 1.25rem;
+}
+
+.content pre {
+    background: var(--border);
+    padding: 1rem;
+    overflow-x: auto;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.content code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9em;
+}
+
+.content blockquote {
+    border-left: 3px solid var(--border);
+    margin-left: 0;
+    padding-left: 1rem;
+    color: var(--muted);
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.85rem;
+}
